@@ -1,0 +1,163 @@
+﻿@model ML.Producto
+@{
+    ViewBag.Title = "Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Producto</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            @using (Html.BeginForm("Form", "Producto", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <div class="form-horizontal">
+
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.IdProducto, new { @class = "visually-hidden" })
+                            @Html.TextBoxFor(model => model.IdProducto, new { @class = "visually-hidden" })
+                            @Html.ValidationMessageFor(model => model.IdProducto)
+                            @*hidden*@
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.Nombre)
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user" style="color:Highlight"></i></span>
+                                @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control", @id = "txtNombre" })
+                                @Html.ValidationMessageFor(model => model.Nombre)
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                     <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.PrecioUnitario)
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user" style="color:Highlight"></i></span>
+                                @Html.TextBoxFor(model => model.PrecioUnitario, new { @class = "form-control", @id = "txtPrecioUnicio" })
+                                @Html.ValidationMessageFor(model => model.PrecioUnitario)
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                     <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.Stock)
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user" style="color:Highlight"></i></span>
+                                @Html.TextBoxFor(model => model.Stock, new { @class = "form-control", @id = "txtStock" })
+                                @Html.ValidationMessageFor(model => model.Stock)
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.Descripcion)
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user" style="color:Highlight"></i></span>
+                                @Html.TextBoxFor(model => model.Descripcion, new { @class = "form-control", @id = "txtDescripcion" })
+                                @Html.ValidationMessageFor(model => model.Descripcion)
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <div class="input-group-addon mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user-plus"></i></span>
+                        <input id="fuImage" type='file' class="form-control" name="fuImage" onchange="validateFile(this), readURL(this);  " />
+                    </div>
+
+                    @if (Model.Imagen != null)
+                    {
+
+                        <img id="Img" src="data:image/*;base64,@Model.Imagen" style="width:100px ; height:100px" />
+
+                    }
+                    else
+                    {
+                        <img id="Img" src="~/Imagenes/SinImagen.png" style="width:100px ; height:100px" />
+                    }
+
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.Proveedor)
+                            @Html.DropDownListFor(model => model.Proveedor.IdProveedor, new SelectList(Model.Proveedor.Proveedores,
+                            "IdProveedor", "Nombre"), "Selecciona un Proveedor", new { @class = "form-control", @id = "ddlProveedor" })
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.Departamento)
+                            @Html.DropDownListFor(model => model.Departamento.IdDepartamento, new SelectList(Model.Departamento.Departamentos,
+                            "IdDepartamento", "Nombre"), "Selecciona un Departamento", new { @class = "form-control", @id = "ddlDepartamento" })
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <input type="submit" value="Guardar" class="btn btn-success" />
+                            @Html.ActionLink("Regresar", "GetAll", "Usuario", htmlAttributes: new { @class = "btn btn-danger" })
+                        </div>
+                    </div>
+
+                </div>
+
+             }
+        </div>
+    </div>
+</div>
+
+@*AJAX*@
+@*<Scripts.Render("~/bundles/jquery")>*@
+@section Scripts{
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<scrpt src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></scrpt>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+    
+    function validateFile() {
+        var allowedExtension = ['jpeg', 'jpg', 'png'];
+        var fileExtension = document.getElementById('fuImage').value.split('.').pop().toLowerCase();
+        var isValidFile = false;
+        for (var index in allowedExtension) {
+            if (fileExtension === allowedExtension[index]) {
+                isValidFile = true;
+                break;
+            }
+        }
+        if (!isValidFile) {
+            alert('Las extensiones permitidas son : *.' + allowedExtension.join(', *.'));
+            document.getElementById('fuImage').value = ""
+        }
+        return isValidFile;
+    }
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#Img').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+</script>
+}

@@ -1,0 +1,120 @@
+﻿@model ML.Producto
+@{
+    ViewBag.Title = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <h2>Venta</h2>
+    </div>
+    <hr />
+
+    @using (Html.BeginForm("GetAll", "Venta", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+        <div class="row">
+
+            <div class="form-group">
+                <div class="col-md-3">
+                    @Html.LabelFor(model => model.Departamento)
+                    @Html.DropDownListFor(model => model.Departamento.IdDepartamento, new SelectList(Model.Departamento.Departamentos,
+                "IdDepartamento", "Nombre"), "Selecciona un Departamento", new { @class = "form-control", @id = "ddlDepartamento" })
+                </div>
+            </div>
+            <br>
+
+
+
+            <br>
+            <div class=col-md-3>
+                <input type='submit' value="Buscar" class="btn btn-info" />
+            </div>
+
+        </div>
+    }
+    <br>
+    @*CARDS*@
+    @*
+        <div class="row">
+        <div class="col-md-3">
+        <div class="card" style="width: 15rem;">
+        <img src="~/Imagenes/Licuadora.jpg" class="card-img-top" alt="150px">
+        <div class="card-body">
+        <h5 class="card-title">Licuadora</h5>
+        <p class="card-text">Licuadora Ninja 1000</p>
+        <p class="card-text">$1739.00</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-3">
+        <div class="card" style="width: 15rem;">
+        <img src="~/Imagenes/Batidora.jpg" class="card-img-top" alt="150px">
+        <div class="card-body">
+        <h5 class="card-title">Batidora</h5>
+        <p class="card-text">Batidora Pedestal y Manual</p>
+        <p class="card-text">$1369.00</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-3">
+        <div class="card" style="width: 15rem;">
+        <img src="~/Imagenes/Smartphone.jpg" class="card-img-top" alt="150px">
+        <div class="card-body">
+        <h5 class="card-title">Samsung Galaxy</h5>
+        <p class="card-text">Smartphone con 6GB de RAM y 128GB de ROM</p>
+        <p class="card-text">$7489.00</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-3">
+        <div class="card" style="width: 15rem;">
+        <img src="~/Imagenes/Impresora.png" class="card-img-top" alt="150px">
+        <div class="card-body">
+        <h5 class="card-title">Impresora Hp lnk Tank</h5>
+        <p class="card-text">Impresora Hp de tinta continua </p>
+        <p class="card-text">$5199.00</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+        </div>
+        </div>
+        </div*@>
+
+    <div class="container">
+        <div class="row row-cols-2 row-cols-md-3 g-4">
+
+            @foreach (ML.Producto producto in Model.Productos)
+            {
+                <div class="row row-cols-1 row-cols-md-3 g-2">
+
+                    <div class="card" style="width: 15rem;">
+                        @if (producto.Imagen != null)
+                        {
+
+                            <img id="Img" src="data:image/*;base64,@producto.Imagen" style="width:100px ; height:100px" />
+
+                        }
+                        else
+                        {
+                            <img id="Img" src="~/Imagenes/SinImagen.png" style="width:100px ; height:150px" />
+                        }
+
+                        <div class="card-body">
+                            <h5 class="card-title">@producto.Nombre</h5>
+                            <p class="card-text">@producto.Descripcion @producto.PrecioUnitario </p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

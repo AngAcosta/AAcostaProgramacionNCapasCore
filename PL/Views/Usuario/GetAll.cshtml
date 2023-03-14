@@ -1,0 +1,171 @@
+﻿@model ML.Usuario
+@{
+    ViewBag.Title = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <h2>Usuario</h2>
+        <h6>En esta paguina puede Añadir,Actualizar,Borrar y Buscar</h6>
+    </div>
+    <hr />
+    <div class="row">
+        <div style="float:right">
+            @Html.ActionLink("Agregar Usuario", "Form", "Usuario", htmlAttributes: new { @class = "btn btn-success" })
+        </div>
+    </div>
+    <hr/>
+    
+    @using (Html.BeginForm("GetAll", "Usuario", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+        <div class="row">
+            <div class="col-md-3">         
+            @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control", @id = "txtNombre" })
+            @Html.ValidationMessageFor(model => model.Nombre,null, new {@class = "text-danger" })
+            </div>
+            
+            <div class="col-md-3">           
+            @Html.TextBoxFor(model => model.ApellidoPaterno,new { @class = "form-control", @id = "txtApellidoPaterno" })
+            @Html.ValidationMessageFor(model => model.ApellidoPaterno,null, new{@class = "text-danger"})
+            </div>
+            
+            <div class="col-md-3">           
+            @Html.TextBoxFor(model => model.ApellidoMaterno, new { @class = "form-control", @id = "txtApellidoMaterno" })
+            @Html.ValidationMessageFor(model => model.ApellidoMaterno,null, new{@class = "text-danger"} )
+            </div>
+
+            <div class=col-md-3>
+                <input type='submit' value="Buscar" class="btn btn-info"/>
+            </div>
+
+        </div>
+
+    }
+
+    <hr/>
+    <div class="row">
+        @if (Model.Usuarios != null)
+        {
+            //tabla
+            <table class="table-info table table-bordered table-responsive table-hover" id ="tblUsuario">
+                <thead>
+                    <tr>
+                        <td class="text-center" style=" font-weight:bold;">Editar</td>
+
+                        <td style="display:none">IdUsuario</td>
+                        <td class="text-center" style=" font-weight:bold;">UserName</td>
+                        <td class="text-center" style=" font-weight:bold;">Nombre</td>
+                        <td class="text-center" style=" font-weight:bold;">Email</td>
+                        <td class="text-center" style=" font-weight:bold;">Password</td>
+                        <td class="text-center" style=" font-weight:bold;">Fecha Nacimiento</td>
+                        <td class="text-center" style=" font-weight:bold;">Sexo</td>
+                        <td class="text-center" style=" font-weight:bold;">Telefono</td>
+                        <td class="text-center" style=" font-weight:bold;">Celular</td>
+                        <td class="text-center" style=" font-weight:bold;">CURP</td>
+                        <td class="text-center" style=" font-weight:bold;">Imagen</td>
+                        <td class="text-center" style=" font-weight:bold;">Rol</td>
+                        <td class="text-center" style=" font-weight:bold;">Status</td>
+                       
+                        <td class="text-center" style=" font-weight:bold;">Eliminar</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (ML.Usuario usuario in Model.Usuarios)
+                    {
+                    <tr>
+                        <td class="text-center"><a class="btn btn-warning glyphicon glyphicon-edit" href="@Url.Action("Form", "Usuario", new { IdUsuario = usuario.IdUsuario })"></a></td>
+
+                        <td style="display:none">@usuario.IdUsuario</td>
+                        <td>@usuario.UserName</td>
+                        <td>@usuario.Nombre @usuario.ApellidoPaterno @usuario.ApellidoMaterno</td>
+                        <td>@usuario.Email </td>
+                        <td>@usuario.Password </td>
+                        <td>@usuario.FechaNacimiento</td>
+                        <td>@usuario.Sexo</td>
+                        <td>@usuario.Telefono </td>
+                        <td>@usuario.Celular </td>
+                        <td>@usuario.CURP</td>
+                         <td>
+                            @if (usuario.Imagen != null)
+                            {
+
+                                <img id="Img" src="data:image/*;base64,@usuario.Imagen" style="width:100px ; height:100px" />
+
+                            }
+                            else
+                            {
+                                <img id="Img" src="~/Imagenes/SinImagen.png" style="width:100px ; height:150px" />
+                            }
+                        </td>
+                        @*<td style="display:none">@usuario.Rol.IdRol</td>*@
+                        <td>@usuario.Rol.Nombre</td>
+
+                        <td>
+                                @if (usuario.Status)
+                                {
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch check"id="flexSwitchCheckDefault" checked>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                        </div>
+                                }
+                        </td>
+
+                        <td class="text-center"><a class="btn btn-danger glyphicon glyphicon-erase" href="@Url.Action("Delete", "Usuario", new { IdUsuario = usuario.IdUsuario })" onclick="return confirm('Estas seguro que deseas eliminar este registro?');"></a></td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div class="alert alert-danger" role="alert">Ocurrio un error al realizar la consulta </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.material.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+
+    <script type="text/javascript">
+         $(document).ready(function () {
+             $('#tblUsuario').DataTable({
+            searching: false,
+            "lengthMenu": [[5, 10, 15, 20, -1], [5, 10, 15, 20, "All"]],
+            autoWidth: false,
+            columnDefs: [
+                {
+                    targets: ['_all'],
+                    className: 'mdc-data-table__cell',
+                },
+            ],
+            language: {
+                url: "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json",
+            },
+         });
+         });
+
+         function ChangeStatus(idUsuario,e){
+             var status = e.checked
+             $.ajax({
+                 type: 'POST',
+                 url: '@Url.Action("ChangeStatus")',
+                 dataType: 'json',
+                 data:{idUsuario,status},
+                 success: {         },
+                 error: function (ex) {
+                     alert('Failed.' + ex);
+                 }
+             });
+         };
+    </script>
+}

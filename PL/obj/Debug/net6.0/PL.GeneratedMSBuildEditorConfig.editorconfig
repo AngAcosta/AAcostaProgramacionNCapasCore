@@ -1,0 +1,92 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PL
+build_property.RootNamespace = PL
+build_property.ProjectDir = C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/CargaMasiva/CargaMasiva.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZ2FNYXNpdmFcQ2FyZ2FNYXNpdmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Departamento/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvXEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Departamento/GetAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvXEdldEFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Departamento/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Producto/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Producto/GetAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cR2V0QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Producto/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Usuario/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Usuario/GetAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xHZXRBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Usuario/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Usuario/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Venta/GetAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFcR2V0QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digis/Documents/Angel Rafael Acosta Villa/AAcostaProgramacionNCapasCore/PL/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ykycstrbf1
