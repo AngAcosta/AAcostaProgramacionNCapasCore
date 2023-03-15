@@ -8,6 +8,8 @@ namespace PL.Controllers
         public ActionResult GetAll()
         {
             ML.Result resultDepartamento = BL.Departamento.GetAll();
+            ML.Result result = BL.Producto.GetAll();
+
      
             ML.Producto producto = new ML.Producto();
             producto.Departamento = new ML.Departamento();
