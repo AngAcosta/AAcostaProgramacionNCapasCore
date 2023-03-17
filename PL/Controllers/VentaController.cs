@@ -8,6 +8,7 @@ namespace PL.Controllers
         public ActionResult GetAll()
         {
             ML.Result resultDepartamento = BL.Departamento.GetAll();
+            ML.Result resultProducto = BL.Producto.GetAll();
             ML.Result result = BL.Producto.GetAll();
 
      
@@ -15,7 +16,7 @@ namespace PL.Controllers
             producto.Departamento = new ML.Departamento();
 
 
-            if (resultDepartamento.Correct)
+            if (resultProducto.Correct)
             {
                 producto.Departamento.Departamentos = resultDepartamento.Objects;
                 producto.Productos = resultDepartamento.Objects;

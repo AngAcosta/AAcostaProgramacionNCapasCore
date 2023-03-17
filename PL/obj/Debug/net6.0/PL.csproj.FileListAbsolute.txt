@@ -11,6 +11,7 @@ C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\Humanizer.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\MessagePack.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\System.Net.Http.Formatting.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\Microsoft.Build.dll
@@ -69,6 +70,7 @@ C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\Mono.TextTemplating.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\NuGet.Common.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\NuGet.Configuration.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
@@ -88,6 +90,8 @@ C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\System.Composition.Runtime.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\System.Composition.TypedParts.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\System.Data.OleDb.dll
+C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\System.Memory.Data.dll
@@ -261,6 +265,8 @@ C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
@@ -292,9 +298,3 @@ C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\obj\Debug\net6.0\PL.pdb
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\obj\Debug\net6.0\PL.genruntimeconfig.cache
 C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\obj\Debug\net6.0\ref\PL.dll
-C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\System.Data.OleDb.dll
-C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
-C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.OleDb.dll
-C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
-C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\System.Net.Http.Formatting.dll
-C:\Users\digis\Documents\Angel Rafael Acosta Villa\AAcostaProgramacionNCapasCore\PL\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
